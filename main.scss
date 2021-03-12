@@ -14,10 +14,12 @@ body {
 	direction: rtl;
 	font-family: $f-Cairo;
 }
+
 a {
 	text-decoration: none;
 	color: inherit;
 }
+
 .nav {
 	.topnav {
 		padding: 5px 30px;
@@ -59,7 +61,7 @@ a {
 					padding: 5px 20px;
 					a {
 						font-size: 1.2rem;
-						font-weight: bold;
+						font-weight: 600;
 						display: flex;
 						align-items: center;
 						i {
@@ -92,12 +94,14 @@ a {
 		}
 	}
 }
+
 .banner {
 	width: 100%;
 	height: 70vh;
 	background-image: url(/img/banner.jpg);
 	background-size: cover;
 }
+
 .about-us {
 	height: 100vh;
 	.title-sec {
