@@ -11,13 +11,25 @@ body {
   font-family: "Cairo", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #022d10;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: green;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
 .nav .topnav {
-  padding: 5px 30px;
+  padding: 2px 30px;
   background-color: green;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,12 +43,9 @@ a {
   color: white;
 }
 
-.nav .topnav .info a {
-  margin: 0 5px;
-}
-
-.nav .topnav .icons {
-  margin: 0 5px;
+.nav .topnav .info a,
+.nav .topnav .icons a {
+  margin: 0 6px;
 }
 
 .nav .navbar {
@@ -111,7 +120,7 @@ a {
 }
 
 .nav .downnav {
-  padding: 5px 30px;
+  padding: 2px 30px;
   background-color: green;
   color: white;
 }
@@ -129,10 +138,6 @@ a {
   height: 70vh;
   background-image: url(/img/banner.jpg);
   background-size: cover;
-}
-
-.about-us {
-  height: 100vh;
 }
 
 .about-us .title-sec {
@@ -217,18 +222,19 @@ a {
 
 .about-us .about-cont .about-img {
   border-radius: 50% 0 0 50%;
-  border: 1px solid #000;
+  border: 1px solid #999;
   padding: 5px;
   width: 500px;
   height: 500px;
   overflow: hidden;
-  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.434);
-          box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.434);
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .about-us .about-cont .about-img .img {
-  background: url(/img/banner.jpg);
+  background: url(/img/g7.jpg);
   background-size: cover;
+  background-position: center center;
   width: 100%;
   height: 100%;
   border-radius: 50% 0 0 50%;
@@ -249,5 +255,112 @@ a {
   color: white;
   font-size: 1.2rem;
   padding: 5px 30px;
+}
+
+.institutes-sections .title-sec {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.institutes-sections .title-sec p {
+  color: darkgreen;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.institutes-sections .title-sec h2 {
+  line-height: 0.9;
+  font-size: 1.5rem;
+}
+
+.institutes-sections .title-sec .under-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.institutes-sections .title-sec .under-line span {
+  width: 80px;
+  height: 3px;
+  background-color: green;
+  margin: 15px 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.institutes-sections .title-sec .under-line span span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: green;
+}
+
+.institutes-sections .title-sec .under-line span:nth-child(1) {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.institutes-sections .title-sec .under-line span:nth-child(2) {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.institutes-sections .title-sec .under-line span:nth-child(3) {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.institutes-sections .institutes-cont {
+  padding: 0 30px;
+}
+
+.institutes-sections .institutes-cont .hicis {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  margin: 20px 0;
+}
+
+.institutes-sections .institutes-cont .hicis .info {
+  padding: 0 20px;
+}
+
+.institutes-sections .institutes-cont .hicis .info h2 {
+  color: darkgreen;
+  margin: 5px 0;
+}
+
+.institutes-sections .institutes-cont .hicis .info p {
+  font-size: 1.1rem;
+}
+
+.institutes-sections .institutes-cont .hicis .info ul {
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+.institutes-sections .institutes-cont .hicis .img {
+  border: 1px solid #999;
+  padding: 5px;
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=main.css.map */

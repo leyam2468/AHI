@@ -13,6 +13,17 @@ body {
 	// color: white;
 	direction: rtl;
 	font-family: $f-Cairo;
+	&::-webkit-scrollbar {
+		width: 0.25rem;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: #022d10;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: green;
+	}
 }
 
 a {
@@ -22,19 +33,17 @@ a {
 
 .nav {
 	.topnav {
-		padding: 5px 30px;
+		padding: 2px 30px;
 		background-color: green;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		color: white;
-		.info {
-			a {
-				margin: 0 5px;
-			}
-		}
+		.info,
 		.icons {
-			margin: 0 5px;
+			a {
+				margin: 0 6px;
+			}
 		}
 	}
 	.navbar {
@@ -81,7 +90,7 @@ a {
 		}
 	}
 	.downnav {
-		padding: 5px 30px;
+		padding: 2px 30px;
 		background-color: green;
 		color: white;
 		marquee {
@@ -103,7 +112,6 @@ a {
 }
 
 .about-us {
-	height: 100vh;
 	.title-sec {
 		width: 100%;
 		padding: 10px 0;
@@ -157,15 +165,16 @@ a {
 		align-items: center;
 		.about-img {
 			border-radius: 50% 0 0 50%;
-			border: 1px solid #000;
+			border: 1px solid #999;
 			padding: 5px;
 			width: 500px;
 			height: 500px;
 			overflow: hidden;
-			box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.434);
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 			.img {
-				background: url(/img/banner.jpg);
+				background: url(/img/g7.jpg);
 				background-size: cover;
+				background-position: center center;
 				width: 100%;
 				height: 100%;
 				border-radius: 50% 0 0 50%;
@@ -183,6 +192,82 @@ a {
 				color: white;
 				font-size: 1.2rem;
 				padding: 5px 30px;
+			}
+		}
+	}
+}
+
+.institutes-sections {
+	.title-sec {
+		width: 100%;
+		padding: 10px 0;
+		text-align: center;
+		p {
+			color: darkgreen;
+			font-weight: 600;
+			font-size: 1.3rem;
+		}
+		h2 {
+			line-height: 0.9;
+			font-size: 1.5rem;
+		}
+		.under-line {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			span {
+				width: 80px;
+				height: 3px;
+				background-color: green;
+				margin: 15px 1px;
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				span {
+					width: 10px;
+					height: 10px;
+					border-radius: 50%;
+					background: green;
+				}
+
+				&:nth-child(1) {
+					justify-content: flex-end;
+				}
+				&:nth-child(2) {
+					width: 15px;
+					height: 15px;
+					border-radius: 50%;
+				}
+				&:nth-child(3) {
+					justify-content: flex-start;
+				}
+			}
+		}
+	}
+	.institutes-cont {
+		padding: 0 30px;
+		.hicis {
+			display: inline-grid;
+			grid-template-columns: auto auto;
+			margin: 20px 0;
+			.info {
+				padding: 0 20px;
+				h2 {
+					color: darkgreen;
+					margin: 5px 0;
+				}
+				p {
+					font-size: 1.1rem;
+				}
+				ul {
+					list-style: none;
+					font-size: 1.1rem;
+				}
+			}
+			.img {
+				border: 1px solid #999;
+				padding: 5px;
+				box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
 			}
 		}
 	}
