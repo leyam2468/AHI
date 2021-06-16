@@ -416,4 +416,37 @@ a {
   padding: 5px 0;
   font-weight: 600;
 }
+
+@media (max-width: 570px) {
+  .nav .navbar .manu {
+    display: none;
+  }
+  .about-us .about-cont {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .about-us .about-cont .about-info {
+    height: unset;
+  }
+  .institutes-sections .institutes-cont .hicis {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .features .features-cont {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    grid-gap: 10px;
+  }
+  .last-news .news-cont {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    grid-gap: 10px;
+  }
+  .fotter .fotter-top {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
 /*# sourceMappingURL=main.css.map */
